@@ -1,0 +1,9 @@
+.containerTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--text-secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+
