@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from '../css/components/book.module.css';
 import BookHeader from './BookHeader';
+import Progress from './Progress';
 
 const Book = (props) => {
   const { title, author } = props;
@@ -16,6 +17,9 @@ const Book = (props) => {
           <span className={styles.buttonSeparator} />
           <button className={styles.bookButton} type="button">Edit</button>
         </div>
+      </div>
+      <div className={styles.bookSection}>
+        <Progress />
       </div>
     </div>
   );
