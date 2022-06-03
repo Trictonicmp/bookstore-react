@@ -13,7 +13,9 @@
   --main-color: #ffffff;
   --secondary-color: #fafafa;
   --main-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
-  --border-radius: 0.2em;
+  --border-radius: 0.25em;
+  --input-placeholder: #c4c4c4;
+  --input-border-hover: #c7c7c7;
 }
 
 body,

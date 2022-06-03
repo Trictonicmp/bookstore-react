@@ -13,3 +13,7 @@
   flex-wrap: wrap;
   gap: 2em;
 }
+
+.button {
+  font-weight: bold;
+}
