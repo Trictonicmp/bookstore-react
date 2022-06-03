@@ -1,6 +1,17 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
 
+:root {
+  --accent-color: #0290ff;
+  --text-color: #121212;
+  --text-secondary-color: #888888;
+  --text-accent-color: #4386bf;
+  --border-discrete-color: #e8e8e8;
+  --main-color: #ffffff;
+  --secondary-color: #fafafa;
+  --misc-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
+}
+
 body,
 section,
 header,
