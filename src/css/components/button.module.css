@@ -1,0 +1,19 @@
+.button {
+  background-color: var(--accent-color);
+  padding: 0.8em;
+  border: none;
+  width: 100%;
+  border-radius: var(--border-radius);
+  font-family: 'Roboto Slab', serif;
+  color: var(--text-button-color);
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--accent-hover-color);
+}
+
+.button:active {
+  background-color: var(--accent-active-color);
+}
