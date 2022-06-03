@@ -1,6 +1,8 @@
+import BookList from '../components/BookList';
+
 const Books = () => (
   <div className="page-container">
-    <p>Hello</p>
+    <BookList />
   </div>
 );
 

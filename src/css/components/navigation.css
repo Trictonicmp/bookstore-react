@@ -2,7 +2,7 @@
   background-color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
   padding: 1.5em;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border-bottom: 1px solid var(--border-discrete-color);
 }
 
@@ -10,23 +10,24 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2.2em;
+  gap: 2.8em;
 }
 
 .navbar-logo {
   text-decoration: none;
   color: var(--accent-color);
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .navbar-links {
   display: flex;
-  gap: 2em;
+  gap: 2.8em;
 }
 
 .navbar-links li a {
   text-decoration: none;
+  letter-spacing: 0.15em;
   color: var(--text-secondary-color);
 }
 
