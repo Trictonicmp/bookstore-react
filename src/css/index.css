@@ -25,6 +25,7 @@ footer {
 
 body {
   background-color: var(--secondary-color);
+  font-size: 0.9em;
 }
 
 .page-container {

@@ -1,10 +1,11 @@
 import styles from '../css/components/addbookform.module.css';
+import formStyles from '../css/components/form.module.css';
 
 const AddBookForm = () => (
   <div className={`page-container ${styles.bookFormContainer}`}>
     <h2 className={styles.containerTitle}>Add new book</h2>
     <form className={styles.bookForm}>
-      <input type="text" />
+      <input className={formStyles.input} type="text" placeholder="Book title" />
       <select placeholder="Category">
         <option>Action</option>
         <option>Science Fiction</option>

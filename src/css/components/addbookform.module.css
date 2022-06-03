@@ -1,9 +1,15 @@
 .containerTitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  font-size: 1.4em;
   color: var(--text-secondary-color);
   text-transform: uppercase;
   margin-bottom: 1em;
 }
 
-
+.bookForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}

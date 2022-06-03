@@ -1,0 +1,6 @@
+.input {
+  padding: 0.8em;
+  border: 1px solid var(--border-discrete-color);
+  border-radius: var(--border-radius);
+  font-family: 'Montserrat', sans-serif;
+}
