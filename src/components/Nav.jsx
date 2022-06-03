@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import profileIcon from '../assets/images/icons/profile.svg';
 
 const Nav = () => (
   <header>
@@ -10,7 +11,7 @@ const Nav = () => (
       <li><Link to="/categories">CATEGORIES</Link></li>
     </ul>
     <Link to="/profile">
-      <img src="" alt="" />
+      <img src={profileIcon} alt="profile" />
     </Link>
   </header>
 );
