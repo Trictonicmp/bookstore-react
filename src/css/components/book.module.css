@@ -1,4 +1,5 @@
 .book {
+  width: 100%;
   background-color: var(--main-color);
   outline: 1px solid var(--border-discrete-color);
   padding: 1.5em;
