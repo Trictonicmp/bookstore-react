@@ -16,6 +16,12 @@ const Book = (props) => {
       <div className={styles.bookSection}>
         <Progress />
       </div>
+      <span className={styles.bookSectionDivision} />
+      <div className={styles.bookSection}>
+        <h4>Current chapter</h4>
+        <p>Chapter 17</p>
+        <button type="button">update progress</button>
+      </div>
     </div>
   );
 };
