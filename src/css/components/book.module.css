@@ -1,0 +1,59 @@
+.book {
+  background-color: var(--main-color);
+  outline: 1px solid var(--border-discrete-color);
+  padding: 1.5em;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bookSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookGenre {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: var(--text-secondary-color);
+  margin-bottom: 0.2em;
+}
+
+.bookHeader {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.bookAuthor {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: var(--text-accent-color);
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 1.5em;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.bookButton {
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  color: var(--text-accent-color);
+}
+
+.bookButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.buttonSeparator {
+  height: 1em;
+  width: 0.1em;
+  background-color: var(--border-discrete-color);
+}
