@@ -1,0 +1,59 @@
+.navbar {
+  background-color: var(--main-color);
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5em;
+  font-size: 0.9em;
+  border-bottom: 1px solid var(--border-discrete-color);
+}
+
+.navbar .page-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.2em;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+}
+
+.navbar-links li a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar-links li .active {
+  color: var(--text-color);
+}
+
+.navbar-profile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 2em;
+  margin-left: auto;
+  outline: 1px solid var(--border-discrete-color);
+}
+
+.navbar-profile-btn:hover {
+  cursor: pointer;
+  outline: 2px solid var(--border-discrete-color);
+}
+
+.navbar-profile-btn img {
+  height: 1.3em;
+}

@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 import profileIcon from '../assets/images/icons/profile.svg';
 
 const Nav = () => (
-  <header>
+  <header className="navbar">
     <div className="page-container">
-      <Link to="/books">
+      <Link to="/books" className="navbar-logo">
         Bookstore CMS
       </Link>
-      <ul>
-        <li><Link to="/books">BOOKS</Link></li>
+      <ul className="navbar-links">
+        <li><Link to="/books" className="active">BOOKS</Link></li>
         <li><Link to="/categories">CATEGORIES</Link></li>
       </ul>
-      <Link to="/profile">
+      <Link to="/profile" className="navbar-profile-btn">
         <img src={profileIcon} alt="profile" />
       </Link>
     </div>
