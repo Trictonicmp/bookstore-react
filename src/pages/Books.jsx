@@ -1,9 +1,9 @@
 import BookList from '../components/BookList';
 
 const Books = () => (
-  <div className="page-container">
+  <section className="books-page">
     <BookList />
-  </div>
+  </section>
 );
 
 export default Books;

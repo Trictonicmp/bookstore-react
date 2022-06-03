@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Book = (props) => {
   const { title, author } = props;
   return (
-    <div>
+    <div className="book">
       hello
       { title }
       { author }
