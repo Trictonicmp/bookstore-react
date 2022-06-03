@@ -6,8 +6,8 @@ const AddBookForm = () => (
   <div className={`page-container ${styles.bookFormContainer}`}>
     <h2 className={styles.containerTitle}>Add new book</h2>
     <form className={styles.bookForm}>
-      <input className={formStyles.input} type="text" placeholder="Book title" />
-      <select className={formStyles.select}>
+      <input className={`${formStyles.input} ${styles.input}`} type="text" placeholder="Book title" />
+      <select className={`${formStyles.select} ${styles.select}`}>
         <option>Category</option>
         <option>Action</option>
         <option>Science Fiction</option>

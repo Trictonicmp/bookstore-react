@@ -17,3 +17,22 @@
 .button {
   font-weight: bold;
 }
+
+.input,
+.select,
+.button {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input {
+  flex-basis: 55em;
+}
+
+.select {
+  flex-basis: 10em;
+}
+
+.button {
+  flex-basis: 8em;
+}
