@@ -10,7 +10,7 @@
   --border-discrete-color: #e8e8e8;
   --main-color: #ffffff;
   --secondary-color: #fafafa;
-  --misc-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
+  --main-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
   --border-radius: 0.2em;
 }
 

@@ -1,0 +1,35 @@
+.percent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  position: relative;
+}
+
+.circlesContainer {
+  position: relative;
+}
+
+.circleSvg {
+  fill: none;
+  stroke-width: 0.6;
+  /* stroke-linecap: round; */
+  /* 100% = 32 */
+  stroke-dasharray: 32;
+}
+
+.progressBackgorund {
+  stroke-dashoffset: 0;
+  stroke: var(--border-discrete-color);
+}
+
+.progressProgress {
+  stroke: var(--accent-color);
+  /* 32 = 0% | 0 = 100% */
+  /* for 64%  ((1 - 0.64) * 32) = 11.52 */
+  /* stroke-dashoffset: 11.52; */
+}
+
+.percent:hover .progressProgress {
+  stroke-width: 0.8;
+}

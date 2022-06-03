@@ -9,7 +9,8 @@
 
 .bookSection {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .bookGenre {
@@ -24,6 +25,7 @@
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   color: var(--text-color);
+  width: 100%;
 }
 
 .bookAuthor {
@@ -33,6 +35,7 @@
 }
 
 .buttonContainer {
+  width: 100%;
   display: flex;
   margin-top: 1.5em;
   align-items: center;
