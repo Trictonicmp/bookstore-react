@@ -1,9 +1,9 @@
 import BookList from '../components/BookList';
 
-const Books = () => (
+const BooksPage = () => (
   <section className="books-page">
     <BookList />
   </section>
 );
 
-export default Books;
+export default BooksPage;

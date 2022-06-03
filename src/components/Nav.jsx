@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import profileIcon from '../assets/images/icons/profile.svg';
+import styles from '../css/components/navigation.module.css';
 
 const Nav = () => (
-  <header className="navbar">
-    <div className="page-container">
-      <Link to="/books" className="navbar-logo">
+  <header className={styles.navbar}>
+    <div className={`page-container ${styles.pageContainer}`}>
+      <Link to="/books" className={styles.logo}>
         Bookstore CMS
       </Link>
-      <ul className="navbar-links">
-        <li><Link to="/books" className="active">BOOKS</Link></li>
-        <li><Link to="/categories">CATEGORIES</Link></li>
+      <ul className={styles.linksContainer}>
+        <li><Link to="/books" className={`${styles.link} ${styles.activeLink}`}>BOOKS</Link></li>
+        <li><Link to="/categories" className={styles.link}>CATEGORIES</Link></li>
       </ul>
-      <Link to="/profile" className="navbar-profile-btn">
+      <Link to="/profile" className={styles.profileBtn}>
         <img src={profileIcon} alt="profile" />
       </Link>
     </div>

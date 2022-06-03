@@ -6,14 +6,14 @@ import {
 } from 'react-router-dom';
 
 import Nav from './components/Nav';
-import Books from './pages/Books';
+import BooksPage from './pages/BooksPage';
 
 const App = () => (
   <div className="App">
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Books />} />
+        <Route path="/" element={<BooksPage />} />
       </Routes>
     </Router>
   </div>

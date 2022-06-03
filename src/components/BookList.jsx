@@ -8,7 +8,7 @@ const BookList = () => {
     },
   ];
   return (
-    <div className="page-container">
+    <div className="page-container books-container">
       <Book title={books[0].title} author={books[0].author} />
     </div>
   );
