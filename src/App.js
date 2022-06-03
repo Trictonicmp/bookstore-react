@@ -5,7 +5,6 @@ import {
   Route,
 } from 'react-router-dom';
 
-import './css/App.css';
 import Nav from './components/Nav';
 import Books from './pages/Books';
 
