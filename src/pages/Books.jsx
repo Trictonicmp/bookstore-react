@@ -1,5 +1,7 @@
 const Books = () => (
-  <p>Hello</p>
+  <div className="page-container">
+    <p>Hello</p>
+  </div>
 );
 
 export default Books;

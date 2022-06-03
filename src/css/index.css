@@ -1,1 +1,15 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+body,
+section,
+header,
+footer {
+  width: 100%;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+}
