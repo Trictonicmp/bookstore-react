@@ -4,13 +4,13 @@
 :root {
   --accent-color: #0290ff;
   --accent-hover-color: #26a1ff;
-  --accent-active-color: #0066ff;
+  --accent-active-color: #06f;
   --text-color: #121212;
-  --text-secondary-color: #888888;
+  --text-secondary-color: #888;
   --text-accent-color: #4386bf;
-  --text-button-color: #ffffff;
+  --text-button-color: #fff;
   --border-discrete-color: #e8e8e8;
-  --main-color: #ffffff;
+  --main-color: #fff;
   --secondary-color: #fafafa;
   --main-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
   --border-radius: 0.25em;
