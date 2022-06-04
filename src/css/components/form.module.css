@@ -1,5 +1,4 @@
-.input,
-.select {
+.input {
   padding: 0.8em;
   border: none;
   outline: 1px solid var(--border-discrete-color);
@@ -14,7 +13,6 @@
 }
 
 .input:hover,
-.select:hover,
 .input:focus {
   outline: 1px solid var(--accent-color);
 }

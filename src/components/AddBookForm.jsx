@@ -3,16 +3,19 @@ import formStyles from '../css/components/form.module.css';
 import buttonStyles from '../css/components/button.module.css';
 
 const AddBookForm = () => (
-  <div className={`page-container ${styles.bookFormContainer}`}>
+  <div className="page-container">
     <h2 className={styles.containerTitle}>Add new book</h2>
     <form className={styles.bookForm}>
-      <input className={`${formStyles.input} ${styles.input}`} type="text" placeholder="Book title" />
-      <select className={`${formStyles.select} ${styles.select}`}>
-        <option>Category</option>
-        <option>Action</option>
-        <option>Science Fiction</option>
-        <option>Economy</option>
-      </select>
+      <input
+        className={`${formStyles.input} ${styles.titleInput}`}
+        type="text"
+        placeholder="Book title"
+      />
+      <input
+        className={`${formStyles.input} ${styles.authorInput}`}
+        type="text"
+        placeholder="Author"
+      />
       <button className={`${buttonStyles.button} ${styles.button}`} type="button">Add book</button>
     </form>
   </div>

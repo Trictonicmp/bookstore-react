@@ -14,23 +14,26 @@
   gap: 2em;
 }
 
-.input,
-.select {
+.input {
   flex-grow: 1;
   flex-shrink: 1;
 }
 
-.input {
-  flex-basis: 55em;
+.titleInput {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30em;
 }
 
-.select {
-  flex-basis: 10em;
+.authorInput {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 15em;
 }
 
 .button {
-  flex-grow: 1;
+  flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 8em;
+  flex-basis: 15em;
   font-weight: bold;
 }

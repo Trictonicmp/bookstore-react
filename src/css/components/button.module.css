@@ -2,7 +2,6 @@
   background-color: var(--accent-color);
   padding: 0.8em;
   border: none;
-  width: 100%;
   border-radius: var(--border-radius);
   font-family: 'Roboto Slab', serif;
   color: var(--text-button-color);
