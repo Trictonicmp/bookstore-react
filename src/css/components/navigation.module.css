@@ -1,0 +1,61 @@
+.navbar {
+  background-color: var(--main-color);
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5em;
+  font-size: 0.8em;
+  border-bottom: 1px solid var(--border-discrete-color);
+}
+
+.pageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.8em;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 2.8em;
+}
+
+.link {
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary-color);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.activeLink {
+  color: var(--text-color);
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 2em;
+  margin-left: auto;
+  outline: 1px solid var(--border-discrete-color);
+}
+
+.profileBtn:hover {
+  cursor: pointer;
+  outline: 2px solid var(--border-discrete-color);
+}
+
+.profileBtn img {
+  height: 1.3em;
+}

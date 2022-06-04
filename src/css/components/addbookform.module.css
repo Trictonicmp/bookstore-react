@@ -1,0 +1,39 @@
+.containerTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: var(--text-secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.bookForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.input {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.titleInput {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30em;
+}
+
+.authorInput {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 15em;
+}
+
+.button {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 15em;
+  font-weight: bold;
+}

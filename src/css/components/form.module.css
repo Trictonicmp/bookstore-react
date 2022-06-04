@@ -1,0 +1,18 @@
+.input {
+  padding: 0.8em;
+  border: none;
+  outline: 1px solid var(--border-discrete-color);
+  border-radius: var(--border-radius);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--input-placeholder);
+  background-color: var(--main-color);
+}
+
+.input:not(:placeholder-shown) {
+  color: var(--text-color);
+}
+
+.input:hover,
+.input:focus {
+  outline: 1px solid var(--accent-color);
+}

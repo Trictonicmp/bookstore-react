@@ -1,0 +1,13 @@
+.percentageDetails {
+  margin-left: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.percentageTitle {
+  font-size: 2em;
+}
+
+.percentageSubtitle {
+  font-size: 0.9em;
+  color: var(--text-secondary-color);
+}

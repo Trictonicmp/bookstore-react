@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+:root {
+  --accent-color: #0290ff;
+  --accent-hover-color: #26a1ff;
+  --accent-active-color: #06f;
+  --text-color: #121212;
+  --text-secondary-color: #888;
+  --text-accent-color: #4386bf;
+  --border-discrete-color: #e8e8e8;
+  --main-color: #fff;
+  --secondary-color: #fafafa;
+  --main-gradient: linear-gradient(to bottom, #307bbe, #379cf6);
+  --border-radius: 0.25em;
+  --input-placeholder: #c4c4c4;
+  --input-border-hover: #c7c7c7;
+  --blue-button-background: #0290ff;
+  --blue-button-text: #fff;
+  --blue-button-active-background: #06f;
+  --blue-button-hover-background: #26a1ff;
+  --red-button-background: #ff0224;
+  --red-button-text: #fff;
+  --red-button-active-background: #c00000;
+  --red-button-hover-background: #ff2f2f;
+}
+
+body,
+section,
+header,
+footer {
+  width: 100%;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.page-container {
+  width: calc(100% - 2em);
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.page-division {
+  display: block;
+  width: calc(100% - 2em);
+  max-width: 1300px;
+  height: 0.1em;
+  margin-inline: auto;
+  background-color: var(--border-discrete-color);
+}
