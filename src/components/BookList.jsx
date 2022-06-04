@@ -21,11 +21,11 @@ const BookList = () => {
   ];
   console.log(books);
   return (
-    <div className={`page-container ${styles.booksContainer}`}>
+    <ul className={`page-container ${styles.booksContainer}`}>
       <Book title={books[0].title} author={books[0].author} />
       <Book title={books[1].title} author={books[1].author} />
       <Book title={books[2].title} author={books[2].author} />
-    </div>
+    </ul>
   );
 };
 

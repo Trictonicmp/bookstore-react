@@ -8,7 +8,7 @@ import Progress from './Progress';
 const Book = (props) => {
   const { title, author } = props;
   return (
-    <div className={styles.book}>
+    <li className={styles.book}>
       <div className={styles.bookSection}>
         <span className={styles.bookGenre}>Action</span>
         <BookHeader title={title} author={author} />
@@ -43,7 +43,7 @@ const Book = (props) => {
       >
         X
       </button>
-    </div>
+    </li>
   );
 };
 
