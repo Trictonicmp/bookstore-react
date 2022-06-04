@@ -16,7 +16,15 @@ const AddBookForm = () => (
         type="text"
         placeholder="Author"
       />
-      <button className={`${buttonStyles.button} ${styles.button}`} type="button">Add book</button>
+      <button
+        className={`${buttonStyles.button}
+          ${buttonStyles.main}
+          ${styles.button}
+        `}
+        type="button"
+      >
+        Add book
+      </button>
     </form>
   </div>
 );

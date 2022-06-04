@@ -1,10 +1,8 @@
 .button {
-  background-color: var(--accent-color);
   padding: 0.8em;
   border: none;
   border-radius: var(--border-radius);
   font-family: 'Roboto Slab', serif;
-  color: var(--text-button-color);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
@@ -12,9 +10,22 @@
 
 .button:hover {
   cursor: pointer;
-  background-color: var(--accent-hover-color);
 }
 
-.button:active {
-  background-color: var(--accent-active-color);
+/* button colors */
+.main {
+  color: var(--blue-button-text);
+  background-color: var(--blue-button-background);
 }
+
+.main:hover { background-color: var(--blue-button-hover-background); }
+.main:active { background-color: var(--blue-button-active-background); }
+
+
+.red {
+  color: var(--red-button-text);
+  background-color: var(--red-button-background);
+}
+
+.red:hover { background-color: var(--red-button-hover-background); }
+.red:active { background-color: var(--red-button-active-background); }

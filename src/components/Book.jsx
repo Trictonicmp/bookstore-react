@@ -22,7 +22,15 @@ const Book = (props) => {
         <div>
           <h4 className={styles.chapterLabel}>Current chapter</h4>
           <p className={styles.chapterCurrent}>Chapter 17</p>
-          <button type="button" className={`${buttonStyles.button} ${styles.button}`}>update progress</button>
+          <button
+            type="button"
+            className={`${buttonStyles.button}
+              ${buttonStyles.main}
+              ${styles.button}
+            `}
+          >
+            update progress
+          </button>
         </div>
       </div>
     </div>
