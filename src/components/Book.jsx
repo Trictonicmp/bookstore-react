@@ -33,6 +33,16 @@ const Book = (props) => {
           </button>
         </div>
       </div>
+      <button
+        type="button"
+        title="Delete"
+        className={`
+          ${buttonStyles.button}
+          ${buttonStyles.red}
+        `}
+      >
+        X
+      </button>
     </div>
   );
 };

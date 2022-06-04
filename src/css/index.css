@@ -19,6 +19,12 @@
   --blue-button-background: #0290ff;
   --blue-button-text: #fff;
   --blue-button-active-background: #06f;
+  --blue-button-hover-background: #26a1ff;
+
+  --red-button-background: #ff0224;
+  --red-button-text: #fff;
+  --red-button-active-background: #c00000;
+  --red-button-hover-background: #ff2f2f;
 }
 
 body,
