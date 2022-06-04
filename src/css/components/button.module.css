@@ -21,7 +21,6 @@
 .main:hover { background-color: var(--blue-button-hover-background); }
 .main:active { background-color: var(--blue-button-active-background); }
 
-
 .red {
   color: var(--red-button-text);
   background-color: var(--red-button-background);
