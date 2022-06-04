@@ -5,11 +5,11 @@ import styles from '../css/components/navigation.module.css';
 const Nav = () => (
   <header className={styles.navbar}>
     <div className={`page-container ${styles.pageContainer}`}>
-      <Link to="/books" className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         Bookstore CMS
       </Link>
       <ul className={styles.linksContainer}>
-        <li><Link to="/books" className={`${styles.link} ${styles.activeLink}`}>BOOKS</Link></li>
+        <li><Link to="/" className={`${styles.link} ${styles.activeLink}`}>BOOKS</Link></li>
         <li><Link to="/categories" className={styles.link}>CATEGORIES</Link></li>
       </ul>
       <Link to="/profile" className={styles.profileBtn}>
