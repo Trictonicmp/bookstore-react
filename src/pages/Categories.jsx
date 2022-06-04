@@ -1,6 +1,14 @@
+import buttonStyles from '../css/components/button.module.css';
+import styles from '../css/pages/categoriespage.module.css';
+
 const Categories = () => (
-  <section className="page-container">
-    <button type="button">Check status</button>
+  <section className={`page-container ${styles.buttonContainer}`}>
+    <button
+      className={buttonStyles.button}
+      type="button"
+    >
+      Check status
+    </button>
   </section>
 );
 
