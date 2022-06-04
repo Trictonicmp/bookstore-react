@@ -1,5 +1,5 @@
 import styles from '../css/components/bookslist.module.css';
-import Book from './Book';
+// import Book from './Book';
 
 const BookList = () => {
   const books = [
@@ -22,9 +22,9 @@ const BookList = () => {
   console.log(books);
   return (
     <ul className={`page-container ${styles.booksContainer}`}>
-      <Book title={books[0].title} author={books[0].author} />
+      {/* <Book title={books[0].title} author={books[0].author} />
       <Book title={books[1].title} author={books[1].author} />
-      <Book title={books[2].title} author={books[2].author} />
+      <Book title={books[2].title} author={books[2].author} /> */}
     </ul>
   );
 };
