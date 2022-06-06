@@ -8,23 +8,18 @@ export const removeBook = () => ({ type: REMOVE_BOOK });
 
 // Reducer
 const reducer = (state = [], action) => {
-  let newState = null;
   switch (action.type) {
     case ADD_BOOK:
-      newState = {
+      return {
         ...state,
         author: action.author,
         title: action.title,
       };
-      break;
     case REMOVE_BOOK:
-      newState = state.filter((book) => book.id !== action.id);
-      break;
+      return state.filter((book) => book.id !== action.id);
     default:
-      newState = state;
+      return state;
   }
-
-  return newState;
 };
 
 export default reducer;
