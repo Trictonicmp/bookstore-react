@@ -24,9 +24,10 @@ const reducer = (state = DEFAULT_BOOKS, action) => {
       return [...state, action.payload];
     case REMOVE_BOOK:
       // return state.filter((book) => book.id !== action.id);
-      return state
-        .slice(0, getIndexOfIn(action.id, state))
-        .concat(state.slice(getIndexOfIn(action.id, state) + 1));
+      return [
+        ...state.slice(0, getIndexOfIn(action.id, state)),
+        ...state.slice(getIndexOfIn(action.id, state) + 1),
+      ];
     default:
       return state;
   }
