@@ -13,8 +13,6 @@ const store = configureStore({
   reducer,
 });
 
-console.log(store);
-
 root.render(
   <React.StrictMode>
     <Provider store={store}>
