@@ -8,7 +8,7 @@ const CategoriesPage = () => {
   const state = useSelector((state) => state.categories);
 
   const showState = () => {
-    dispatch(checkStatus());
+    dispatch(checkStatus('under construction'));
   };
 
   return (
