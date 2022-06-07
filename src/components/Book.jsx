@@ -6,11 +6,11 @@ import BookButtonsSection from './BookButtonSections';
 import Progress from './Progress';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const { title, author, genre } = props;
   return (
     <li className={styles.book}>
       <div className={styles.bookSection}>
-        <span className={styles.bookGenre}>Action</span>
+        <span className={styles.bookGenre}>{ genre }</span>
         <BookHeader title={title} author={author} />
         <BookButtonsSection />
       </div>
@@ -50,11 +50,13 @@ const Book = (props) => {
 Book.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
+  genre: PropTypes.string,
 };
 
 Book.defaultProps = {
   title: '',
   author: '',
+  genre: '',
 };
 
 export default Book;
