@@ -23,7 +23,7 @@ const AddBookForm = () => (
           ${buttonStyles.main}
           ${styles.button}
         `}
-        type="button"
+        type="submit"
       >
         Add book
       </button>
