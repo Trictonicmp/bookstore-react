@@ -1,7 +1,7 @@
 import buttonStyles from '../css/components/button.module.css';
 import styles from '../css/pages/categoriespage.module.css';
 
-const Categories = () => (
+const CategoriesPage = () => (
   <section className={`page-container ${styles.buttonContainer}`}>
     <button
       className={`
@@ -16,4 +16,4 @@ const Categories = () => (
   </section>
 );
 
-export default Categories;
+export default CategoriesPage;

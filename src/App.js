@@ -7,14 +7,14 @@ import {
 
 import Nav from './components/Nav';
 import BooksPage from './pages/BooksPage';
-import Categories from './pages/Categories';
+import CategoriesPage from './pages/CategoriesPage';
 
 const App = () => (
   <div className="App">
     <Router>
       <Nav />
       <Routes>
-        <Route path="/categories" element={<Categories />} />
+        <Route path="/categories" element={<CategoriesPage />} />
         <Route path="/" element={<BooksPage />} />
       </Routes>
     </Router>
