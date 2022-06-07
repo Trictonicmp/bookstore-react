@@ -11,11 +11,7 @@ const DEFAULT_BOOKS = [];
 const reducer = (state = DEFAULT_BOOKS, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return {
-        ...state,
-        author: action.author,
-        title: action.title,
-      };
+      return [...state, action.payload];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     default:

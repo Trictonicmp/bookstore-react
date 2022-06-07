@@ -2,7 +2,7 @@ import styles from '../css/components/bookslist.module.css';
 // import Book from './Book';
 
 const BookList = () => {
-  const books = [
+  /* const books = [
     {
       title: 'The Hunger Games',
       author: 'Suzanne Collins',
@@ -18,8 +18,8 @@ const BookList = () => {
       author: 'Frank Herbert',
       genre: 'Science Fiction',
     },
-  ];
-  console.log(books);
+  ]; */
+  console.log('books');
   return (
     <ul className={`page-container ${styles.booksContainer}`}>
       {/* <Book title={books[0].title} author={books[0].author} />
