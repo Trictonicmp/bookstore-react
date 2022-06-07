@@ -3,7 +3,7 @@ const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
 // Action creators
-export const addBook = () => ({ type: ADD_BOOK });
+export const addBook = (payload) => ({ type: ADD_BOOK, payload });
 export const removeBook = () => ({ type: REMOVE_BOOK });
 
 // Reducer
