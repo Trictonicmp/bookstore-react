@@ -7,7 +7,8 @@ export const addBook = (payload) => ({ type: ADD_BOOK, payload });
 export const removeBook = () => ({ type: REMOVE_BOOK });
 
 // Reducer
-const reducer = (state = [], action) => {
+const DEFAULT_BOOKS = [];
+const reducer = (state = DEFAULT_BOOKS, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return {
