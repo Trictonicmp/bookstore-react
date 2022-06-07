@@ -4,7 +4,7 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 
 // Action creators
 export const addBook = (payload) => ({ type: ADD_BOOK, payload });
-export const removeBook = () => ({ type: REMOVE_BOOK });
+export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
 
 // Reducer
 const DEFAULT_BOOKS = [];
