@@ -10,11 +10,13 @@ const AddBookForm = () => (
         className={`${formStyles.input} ${styles.titleInput}`}
         type="text"
         placeholder="Book title"
+        required
       />
       <input
         className={`${formStyles.input} ${styles.authorInput}`}
         type="text"
         placeholder="Author"
+        required
       />
       <button
         className={`${buttonStyles.button}
