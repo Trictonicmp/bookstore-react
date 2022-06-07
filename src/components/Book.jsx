@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 import styles from '../css/components/book.module.css';
 import buttonStyles from '../css/components/button.module.css';
 import BookHeader from './BookHeader';
@@ -6,7 +8,18 @@ import BookButtonsSection from './BookButtonSections';
 import Progress from './Progress';
 
 const Book = (props) => {
-  const { title, author, genre } = props;
+  const {
+    title,
+    author,
+    genre,
+    id,
+  } = props;
+  const dispatch = useDispatch();
+
+  const removeThisBook = () => {
+    dispatch(removeBook(id));
+  };
+
   return (
     <li className={styles.book}>
       <div className={styles.bookSection}>
@@ -40,6 +53,7 @@ const Book = (props) => {
           ${buttonStyles.button}
           ${buttonStyles.red}
         `}
+        onClick={removeThisBook}
       >
         X
       </button>
@@ -51,6 +65,7 @@ Book.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
   genre: PropTypes.string,
+  id: PropTypes.number.isRequired,
 };
 
 Book.defaultProps = {

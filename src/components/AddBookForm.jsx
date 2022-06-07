@@ -8,16 +8,23 @@ const AddBookForm = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
+  const resetForm = (form) => {
+    form.reset();
+  };
+
   const addNewBook = (event) => {
+    const form = event.target;
     event.preventDefault();
     const newBook = {
-      title: event.target.title.value,
-      author: event.target.author.value,
+      title: form.title.value,
+      author: form.author.value,
       genre: 'action',
       id: books.length + 1,
     };
 
     dispatch(addBook(newBook));
+    resetForm(form);
+    form.title.focus();
   };
 
   return (

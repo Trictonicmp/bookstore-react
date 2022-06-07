@@ -23,7 +23,13 @@ const BookList = () => {
   ]; */
   const bookComponents = [];
   state.forEach((book) => (bookComponents.push(
-    <Book title={book.title} author={book.author} genre={book.genre} key={book.id} />,
+    <Book
+      title={book.title}
+      author={book.author}
+      genre={book.genre}
+      id={book.id}
+      key={book.id}
+    />,
   )));
 
   return (
