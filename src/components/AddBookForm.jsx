@@ -14,7 +14,7 @@ const AddBookForm = () => {
       title: event.target.title.value,
       author: event.target.author.value,
       genre: 'action',
-      id: books.length,
+      id: books.length + 1,
     };
 
     dispatch(addBook(newBook));
