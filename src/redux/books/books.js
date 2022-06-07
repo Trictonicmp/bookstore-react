@@ -7,7 +7,26 @@ export const addBook = (payload) => ({ type: ADD_BOOK, payload });
 export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
 
 // Reducer
-const DEFAULT_BOOKS = [];
+const DEFAULT_BOOKS = [
+  {
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    genre: 'Action',
+    id: 1,
+  },
+  {
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    genre: 'Action',
+    id: 2,
+  },
+  {
+    title: 'Dune',
+    author: 'Frank Herbert',
+    genre: 'Science Fiction',
+    id: 3,
+  },
+];
 const reducer = (state = DEFAULT_BOOKS, action) => {
   switch (action.type) {
     case ADD_BOOK:
