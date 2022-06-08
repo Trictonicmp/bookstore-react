@@ -27,7 +27,7 @@ const BookList = () => {
       title={book.title}
       author={book.author}
       genre={book.genre}
-      id={book.id}
+      id={book.item_id}
       key={book.id}
     />,
   )));
