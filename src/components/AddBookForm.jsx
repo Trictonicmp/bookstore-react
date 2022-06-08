@@ -3,6 +3,7 @@ import styles from '../css/components/addbookform.module.css';
 import formStyles from '../css/components/form.module.css';
 import buttonStyles from '../css/components/button.module.css';
 import { addBook } from '../redux/books/books';
+import { v4 as uuidv4 } from 'uuid';
 
 const AddBookForm = () => {
   const books = useSelector((state) => state.books);
@@ -19,7 +20,7 @@ const AddBookForm = () => {
       title: form.title.value,
       author: form.author.value,
       genre: 'action',
-      id: books.length + 1,
+      item_id: uuidv4(),
     };
 
     dispatch(addBook(newBook));
