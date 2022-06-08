@@ -1,4 +1,4 @@
-import { addBookToAPI, removeBookFromAPI } from '../../API/bookstoreAPI';
+import { addBookToAPI, removeBookFromAPI, getBooksFromAPI } from '../../API/bookstoreAPI';
 
 // Action types
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
@@ -13,8 +13,10 @@ export const addBook = (payload) => async (dispatch) => {
 
 // export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
 export const removeBook = (bookId) => async (dispatch) => {
-  await removeBookFromAPI(bookId);
-  dispatch({ type: REMOVE_BOOK, bookId });
+  const response = await removeBookFromAPI(bookId);
+  if (response.length > 0) {
+    dispatch({ type: REMOVE_BOOK, bookId });
+  }
 };
 
 // helper functions
@@ -28,7 +30,7 @@ const getIndexOfIn = (id, booksArr) => {
 };
 
 // Reducer
-const DEFAULT_BOOKS = [];
+const DEFAULT_BOOKS = await getBooksFromAPI();
 const reducer = (state = DEFAULT_BOOKS, action) => {
   switch (action.type) {
     case ADD_BOOK:
