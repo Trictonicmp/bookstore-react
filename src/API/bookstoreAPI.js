@@ -12,11 +12,19 @@ export const getBooksFromAPI = fetch(`${BASE_URL}${API_KEY}/books`)
     throw error;
   });
 
-export const addBookToAPI = async (book) => fetch(`${BASE_URL}${API_KEY}/books`, {
+export const addBookToAPI = (book) => fetch(`${BASE_URL}${API_KEY}/books`, {
   method: 'POST',
   body: JSON.stringify(book),
 })
-  .then((response) => response.text)
+  .then((response) => response.text())
+  .catch((error) => {
+    throw error;
+  });
+
+export const removeBookFromAPI = (bookId) => fetch(`${BASE_URL}${API_KEY}/books/${bookId}`, {
+  method: 'DELETE',
+})
+  .then((response) => response.text())
   .catch((error) => {
     throw error;
   });
