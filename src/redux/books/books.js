@@ -1,4 +1,4 @@
-import { addBookToAPI, removeBookFromAPI, getBooksFromAPI } from '../../API/bookstoreAPI';
+import { addBookToAPI, removeBookFromAPI } from '../../API/bookstoreAPI';
 
 // Action types
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
@@ -30,7 +30,7 @@ const getIndexOfIn = (id, booksArr) => {
 };
 
 // Reducer
-const DEFAULT_BOOKS = await getBooksFromAPI();
+const DEFAULT_BOOKS = [];
 const reducer = (state = DEFAULT_BOOKS, action) => {
   switch (action.type) {
     case ADD_BOOK:

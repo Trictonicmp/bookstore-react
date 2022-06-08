@@ -1,9 +1,17 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooksFromAPI } from '../API/bookstoreAPI';
 import styles from '../css/components/bookslist.module.css';
 import Book from './Book';
 
 const BookList = () => {
   const state = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooksFromAPI());
+  }, [dispatch]);
+
   /* const books = [
     {
       title: 'The Hunger Games',
