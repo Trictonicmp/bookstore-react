@@ -1,9 +1,17 @@
+import { addBookToAPI } from '../../API/bookstoreAPI';
+
 // Action types
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // Action creators
-export const addBook = (payload) => ({ type: ADD_BOOK, payload });
+// export const addBook = (payload) => ({ type: ADD_BOOK, payload });
+export const addBook = (payload) => async (dispatch) => {
+  const newBook = { ...payload, category: 'book' };
+  await addBookToAPI(newBook);
+  dispatch({ type: ADD_BOOK, payload: newBook });
+};
+
 export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
 
 // helper functions
