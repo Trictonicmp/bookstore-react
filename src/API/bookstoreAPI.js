@@ -3,9 +3,7 @@ const API_KEY = 'KCQ7InVjdDBdlrIKPo1M';
 
 export const getBooksFromAPI = fetch(`${BASE_URL}${API_KEY}/books`)
   .then((response) => {
-    if (!Object.keys(response.data).length) {
-      return [];
-    }
+    if (response.headers.get('content-length') === 0) return [];
     return response.json();
   })
   .catch((error) => {
@@ -15,6 +13,9 @@ export const getBooksFromAPI = fetch(`${BASE_URL}${API_KEY}/books`)
 export const addBookToAPI = (book) => fetch(`${BASE_URL}${API_KEY}/books`, {
   method: 'POST',
   body: JSON.stringify(book),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
 })
   .then((response) => response.text())
   .catch((error) => {
