@@ -11,6 +11,12 @@ export const getBooksFromAPI = fetch(`${BASE_URL}${API_KEY}/books`)
   .catch((error) => {
     throw error;
   });
-export const addBookToAPI = async () => {
 
-};
+export const addBookToAPI = async (book) => fetch(`${BASE_URL}${API_KEY}/books`, {
+  method: 'POST',
+  body: JSON.stringify(book),
+})
+  .then((response) => response.text)
+  .catch((error) => {
+    throw error;
+  });
