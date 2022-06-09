@@ -8,10 +8,18 @@
 
 - Languages: HTML, CSS, JsvaScript
 - Frameworks: React
-- Technologies: Linters, Git, GitHub. 
+- Technologies: Linters, Git, GitHub, Redux. 
 
-## Live Demo (if available)
-## Soon
+## Screenshots
+
+![mockup responsivo 3](https://user-images.githubusercontent.com/11634112/172740401-e0a4f947-2502-4862-9e55-b73564ee7297.png)
+
+## Preview
+
+![Recording 2022-06-08 at 19 51 29](https://user-images.githubusercontent.com/11634112/172741395-e1565157-61d3-4b45-8ca3-d3184b272990.gif)
+
+## Live Demo
+## [Here!!](https://dulcet-cajeta-81121d.netlify.app/)
 
 
 ## Getting Started
@@ -52,7 +60,7 @@ Run ```npm test```
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Trictonicmp/bookstore-react/issues).
 
 ## Show your support
 
