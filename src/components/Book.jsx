@@ -13,6 +13,7 @@ const Book = (props) => {
     author,
     genre,
     id,
+    percentage,
   } = props;
   const dispatch = useDispatch();
 
@@ -29,7 +30,7 @@ const Book = (props) => {
       </div>
       <div className={styles.bookSection}>
         <div className={styles.progressContainer}>
-          <Progress />
+          <Progress percentage={percentage} />
         </div>
         <span className={styles.bookSectionDivision} />
         <div>
@@ -65,6 +66,7 @@ Book.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
   genre: PropTypes.string,
+  percentage: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
 };
 

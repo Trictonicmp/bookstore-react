@@ -35,6 +35,7 @@ const BookList = () => {
       title={book.title}
       author={book.author}
       genre={book.genre}
+      percentage={Math.random()}
       id={book.item_id}
       key={book.item_id}
     />,
