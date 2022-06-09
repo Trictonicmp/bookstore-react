@@ -14,7 +14,7 @@ const RadialProgressBar = (props) => {
       { strokeDashoffset: calculateProgressOffset(percentage) },
     ], {
       duration: 1000,
-      animationTimingFunction: 'ease-in',
+      animationTimingFunction: 'ease-out',
     });
   }, [percentageBar]);
 
