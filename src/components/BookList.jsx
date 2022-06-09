@@ -1,9 +1,17 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooks } from '../redux/books/books';
 import styles from '../css/components/bookslist.module.css';
 import Book from './Book';
 
 const BookList = () => {
   const state = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
   /* const books = [
     {
       title: 'The Hunger Games',
@@ -27,8 +35,8 @@ const BookList = () => {
       title={book.title}
       author={book.author}
       genre={book.genre}
-      id={book.id}
-      key={book.id}
+      id={book.item_id}
+      key={book.item_id}
     />,
   )));
 
