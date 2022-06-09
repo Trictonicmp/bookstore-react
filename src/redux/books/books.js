@@ -12,7 +12,6 @@ export const addBook = (payload) => async (dispatch) => {
   dispatch({ type: ADD_BOOK, payload: newBook });
 };
 
-// export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
 export const removeBook = (bookId) => async (dispatch) => {
   const response = await removeBookFromAPI(bookId);
   if (response.length > 0) {
@@ -24,7 +23,7 @@ export const getBooks = () => async (dispatch) => {
   const booksObject = await getBooksFromAPI();
   const books = Object.keys(booksObject).map((key) => {
     const newBook = booksObject[key][0];
-    newBook.id = key;
+    newBook.item_id = key;
     return newBook;
   });
   dispatch({ type: GET_BOOKS, books });
