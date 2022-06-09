@@ -1,10 +1,23 @@
 import PropTypes from 'prop-types';
+import { useRef, useEffect } from 'react';
 import styles from '../css/components/radialprogressbar.module.css';
 
 const RadialProgressBar = (props) => {
   const { percentage } = props;
+  const percentageBar = useRef();
 
   const calculateProgressOffset = () => ((1 - percentage) * 32);
+  const calculatedOffset = calculateProgressOffset();
+
+  useEffect(() => {
+    percentageBar.current.animate([
+      { strokeDashoffset: 32 },
+      { strokeDashoffset: calculatedOffset },
+    ], {
+      duration: 1000,
+      animationTimingFunction: 'ease-out',
+    });
+  }, []);
 
   return (
     <div className={styles.percent}>
@@ -21,7 +34,8 @@ const RadialProgressBar = (props) => {
           cy="5"
           r="5"
           transform="rotate(-90 5 5)"
-          strokeDashoffset={calculateProgressOffset()}
+          ref={percentageBar}
+          strokeDashoffset={calculatedOffset}
         />
       </svg>
     </div>
@@ -29,7 +43,7 @@ const RadialProgressBar = (props) => {
 };
 
 RadialProgressBar.propTypes = {
-  percentage: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default RadialProgressBar;

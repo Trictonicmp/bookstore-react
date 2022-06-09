@@ -14,8 +14,6 @@
   fill: none;
   stroke-width: 0.6;
 
-  /* stroke-linecap: round; */
-
   /* 100% = 32 */
   stroke-dasharray: 32;
 }
