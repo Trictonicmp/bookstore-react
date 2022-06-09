@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getBooksFromAPI } from '../API/bookstoreAPI';
+import { getBooks } from '../redux/books/books';
 import styles from '../css/components/bookslist.module.css';
 import Book from './Book';
 
@@ -9,7 +9,7 @@ const BookList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getBooksFromAPI());
+    dispatch(getBooks());
   }, [dispatch]);
 
   /* const books = [
